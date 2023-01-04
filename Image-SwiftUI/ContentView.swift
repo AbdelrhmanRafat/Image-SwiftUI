@@ -13,6 +13,11 @@ struct ContentView: View {
             .resizable() // To Resize the Image.
             .edgesIgnoringSafeArea(.vertical)
             // Ignore Safe Area
+            //To Ways to Scale the Image
+            .aspectRatio(contentMode: .fill)
+            //.scaledToFit()
+            .frame(width: 300)// to control the size of a view.
+            .clipShape(Capsule())// Eliminates the extra parts of the view. Takes Shape Argument controls shape of the view.
     }
 }
 

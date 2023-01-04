@@ -9,8 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Image(systemName: "cloud.heavyrain")
-            .font(.system(size: 100.0, weight: .heavy, design: .rounded))
+        Image("Eiffel tower")
+            .resizable() // To Resize the Image.
+            .edgesIgnoringSafeArea(.vertical)
+            // Ignore Safe Area
     }
 }
 
